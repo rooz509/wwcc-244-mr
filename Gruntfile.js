@@ -47,8 +47,8 @@ function myTasks(grunt)
         });
 
     grunt.registerTask('default', ['clean:all', 'build']);
-    grunt.registerTask('build', ['browserify','copy']);
     grunt.registerTask('dev', ['default', 'watch']);
+    grunt.registerTask('build', ['browserify','copy']);
     //grunt.registerTask('test', ['lint', 'prettify']);
 
     grunt.loadNpmTasks('grunt-contrib-copy');
